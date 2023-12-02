@@ -13,7 +13,6 @@
     </properties>
 
     <build>
-        <sourceDirectory>src/main/java</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -22,6 +21,9 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+                    <includes>
+                        <include>Main.java</include>
+                    </includes>
                 </configuration>
             </plugin>
         </plugins>
